@@ -73,7 +73,6 @@ function SubmitGuess(guess)
 
     if (guess.toLowerCase() == answer.toLowerCase())
     {
-        alert("Congratulations! You guessed the right country!");
         ShowRightCountry()
         EraseFlagColors(16);
     }
