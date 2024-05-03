@@ -216,7 +216,7 @@ function onInputChange() {
 
     // Filter country names based on input
     const countries = JSON.parse(localStorage.getItem("suggestions"));
-    const filteredCountries = countries.filter(country => country.toLowerCase().startsWith(query));
+    const filteredCountries = countries.filter(country => country.toLowerCase().includes(query));
 
     // Display filtered countries
     filteredCountries.forEach(country => {
